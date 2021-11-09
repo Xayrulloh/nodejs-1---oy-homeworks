@@ -737,6 +737,126 @@ for (let bir = 1; bir <= son; bir++) {
 }
 console.log(yigindisi);*/
 
+// 11 - misol
+/*function getlistofdivisiblenumber(son) {
+    obj1 = {
+        3: [],
+        5: []
+    }
+    for (let nol = 1; nol <= son; nol++) {
+        if (nol % 3 == 0){
+            obj1[3].push(nol)
+        }
+        if (nol % 5 == 0) {
+            obj1[5].push(nol)
+        }
+    }
+    console.log(obj1);
+}
+getlistofdivisiblenumber(10)*/
+
+// 12 - misol
+/*arr = [['a', 2], ['b', 3]]
+let obj = {}
+for (item of arr) {
+    obj[item[0]]=item[1]
+}
+console.log(obj);*/
+
+
+// uy ishikan
+/*function chopish(array, son, so){
+    let arr = []
+    for (item of array){
+        if (item != son && item != so){
+            arr.push(item)
+        }
+    }
+    array = arr
+    console.log(array);
+}
+let array = [1, 2, 3, 1, 2]
+chopish(array, 1, 2)*/
+
+// 1 - misol
+/*let addres = {
+    address: 'Qora - Qamish',
+    mahalla: 'Qayirma',
+    uy: 46
+}
+function print(obje) {
+    for (i in obje){
+    console.log(i + ' key, ' + obje[i] + ' value');
+    }
+}
+print(addres)*/
+
+// 2 - misol
+/*function doObject(street, city, zipcode) {
+    return  obj1 = {
+            street,
+            city,
+            zipcode
+        }
+    
+}
+console.log(doObject('Qayirma', 'Tashkent', '2 - misol'));*/
+
+// 3 - misol
+/*function Return(street, city, zipcode) {
+    this.street = street,
+    this.city = city,
+    this.zipcode = zipcode
+}
+console.log(new Return ('Qayirma', "Tashkent", '3 - misol'));*/
+
+// 4 - misol
+/*function Check(obj1, obj2) {
+    for (a in obj2) {
+        if (obj2[a] !== obj1[a]) {
+            return false
+        }
+        return true
+    }
+}
+let obj1 = {}
+let obj2 = {}
+function Tuzish(key, value){
+    this.key = key,
+    this.value = value
+}
+obj1 = new Tuzish('kalit', 'qiymat')
+obj2 = new Tuzish('kalit', 'qiymat')
+console.log(Check(obj1, obj2));*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
