@@ -2203,8 +2203,105 @@ afterNYears({
     'Rahmatilla' : 23
 }, 7)*/
 
-// classwork 3 
-function types()
+// promise methods
+// 1 - task
+/*Promise.resolve('resolve').then((value) => {console.log('fulfilled')})
+Promise.reject('rejected').catch((value) => {console.log('Daaaang ')}) */
+
+// 1 - classwork
+/*function alNum(str) {
+    let num = ''
+    let strs = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    for (let a = 0; a < str.length; a++) {
+        for (let b = 0; b < strs.length; b++) {
+            if (str[a] === strs[b]) num += `${b} `
+        }
+    }
+    console.log(num);
+}
+alNum('XYZ')*/
+
+// 2 - classwork
+/*function numOfDigits(num) {
+    let len = 0
+    if (num === 0) return 1
+    while(num > 0) {
+        num /= 10
+        num = Math.floor(num)
+        len++
+    }
+    return len
+}
+console.log(numOfDigits(0));
+console.log(numOfDigits(1000));
+console.log(numOfDigits(12));*/
+
+// 3 - classwork
+/*function concat(...arr) {
+    let array = []
+    for (const element of arr) {
+        array = array.concat(element)
+    }
+    console.log(array);
+}
+concat([1, 2], [4, 5], [7, 8])*/
+
+// 4 - classwork
+/*function boxSeq(num) {
+    return num % 2 == 0 ? num : num + 2
+}
+console.log(boxSeq(0));
+console.log(boxSeq(1));
+console.log(boxSeq(2));*/
+
+// 5 - classwork
+/*function chessBoard(str) {
+    let son1 = 1
+    let arr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+    for (let a = 0; a < arr.length; a++) {
+        if (arr[a] == str[0]) son1 += a
+    }
+   let res = son1 + parseInt(str[1])
+    return res % 2 == 0 ? 'black' : 'white'
+}
+console.log(chessBoard('a1'));
+console.log(chessBoard('e5'));
+console.log(chessBoard('d1'));*/
+
+// 1 - homework
+// const promise = new Promise((resolve, reject) => {
+//     return resolve('hi')
+// })
+// promise.then(() => {setTimeout(() => console.log('1 chain'), 3000)})
+// .then(() => {return setTimeout(() => console.log('2 chain'), 2000)})
+// .then(() => {return setTimeout(() => console.log('3 chain'), 1000)})
+// .finally(() => {return console.log('its final')})
+
+// 2 - homework
+const fetch = require('node-fetch')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
