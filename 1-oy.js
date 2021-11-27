@@ -1933,6 +1933,7 @@ totalVotes(voters)*/
 
 // 1 - exercise
 "use strict"
+
 /*function inBetween( a, b) {
     return (value) => value > a && value < b
 }
@@ -2256,12 +2257,10 @@ console.log(boxSeq(2));*/
 
 // 5 - classwork
 /*function chessBoard(str) {
-    let son1 = 1
     let arr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
-    for (let a = 0; a < arr.length; a++) {
-        if (arr[a] == str[0]) son1 += a
-    }
-   let res = son1 + parseInt(str[1])
+    let son = arr.indexOf(str[0])
+    son++
+    let res = son + parseInt(str[1])
     return res % 2 == 0 ? 'black' : 'white'
 }
 console.log(chessBoard('a1'));
@@ -2269,36 +2268,223 @@ console.log(chessBoard('e5'));
 console.log(chessBoard('d1'));*/
 
 // 1 - homework
-// const promise = new Promise((resolve, reject) => {
-//     return resolve('hi')
-// })
-// promise.then(() => {setTimeout(() => console.log('1 chain'), 3000)})
-// .then(() => {return setTimeout(() => console.log('2 chain'), 2000)})
-// .then(() => {return setTimeout(() => console.log('3 chain'), 1000)})
-// .finally(() => {return console.log('its final')})
+/*new Promise(function (resolve, reject) {
+    resolve()
+}).then(function(result) {
+    return new Promise((resolve, reject) => {setTimeout(() => resolve('3 secund'), 3000)})
+}).then(function(result) {
+    console.log(result);
+    return new Promise((resolve, reject) => {setTimeout(() => resolve('2 secund'), 2000)})
+}).then(function (result) {
+    console.log(result);
+    return new Promise((resolve, reject) => {setTimeout(() => resolve('1 secund'), 1000)})
+}).then((result) => console.log(result)).finally(() => console.log('its final'))*/
 
-// 2 - homework
-const fetch = require('node-fetch')
+// promise .then
+// new Promise(function(resolve, reject) {
+//     resolve('done')
+// }).then((res) => {setTimeout(() => console.log(res), 3000)})
 
+// async await
+// async function kallenga() {
+//     return 'nima'
+// }
+// async function asyncFunction(){
+//     let a = await kallenga()
+//     console.log(a);
+// }
+// asyncFunction()
 
+// async .then
+// async function asyncFunction(){
+//     return 'nima gap'
+// }
+// asyncFunction().then((res) => {console.log(res)})
 
+// import fetch from "node-fetch"
+// homeworks
+// async
+// async 1
+/*async function nimadir(nima) {
+    console.log(nima);
+}
+nimadir('gfd')*/
 
+// async 2
+/*async function add(value) {
+    console.log(value + value);
+}
+add(123)*/
 
+// async 3
+/*async function ret(value) {
+    return value
+}
+console.log(ret(123));*/
 
+// async 4
+/*async function arr(ar1, ar2) {
+    return ar1.concat(ar2)
+}
+console.log(arr([1, 2], [3, 4]));*/
 
+// async 5
+/*async function log(str, index) {
+    return str[index]
+}
+console.log(log('what', 2));*/
 
+// Promise
+// promise 1
+/*new Promise((resolve) => {console.log('resolve')})*/
 
+// promise 2
+/*new Promise((reject, reject) => {new Error('dang')})*/
 
+// promise 3
+/*new Promise((resolve, reject) => {
+    setTimeout(() => resolve(console.log('uyee')), 2000)
+})*/
 
+// promise 4
+/*new Promise((resolve, reject) => {
+    setTimeout(() => reject(new Error('what is that'), 0))
+})*/
 
+// promise 5
+/*new Promise((resolve, reject) => {
+    return resolve('hi')
+}).then(new Promise((resolve, reject) => {
+    reject(new Error('what is that'))
+}))*/
 
+// async await
+// aysnc await 1
+/*async function ret(value) {
+    return value
+}
+async function print(thing) {
+    let things = await ret(thing)
+    console.log(things);
+}
+print('how its worked')*/
 
+// aysnc await 2
+/*async function ret(value) {
+    return value
+}
+async function add(arr, arr2, log) {
+    let array = await arr.concat(arr2)
+    console.log(log);
+    return array
+}
+console.log(add([1, 2, 3], [4, 5, 6], 'itsn\'t worked if will be return'))*/
 
+// aysnc await 3
+/*async function log(str, index) {
+    console.log(await(str[index]));
+}
+log('what', 2)*/
 
+// aysnc await 4
+/*async function date() {
+    let time = new Date()
+    return time.getDay()
+}
+console.log(date());
+console.log(await date());*/
 
+// aysnc await 5
+/*async function asyncFunc(){
+    return 'I am async function'
+}
+let af = asyncFunc();
+console.log(af);
+console.log(await af);*/
 
+// async then
+// async then 1
+/*async function timeThen() {
+    setTimeout(() => console.log('after 3 second'), 3000)
+}
+timeThen().then(setTimeout(() => console.log('after 2 second'), 2000))*/
 
+// async then 2
+/*async function hi() {return 'hello'}
+hi().then((value) => console.log(value))
+hi().then(console.log)
+*/
 
+// async then 3
+/*async function add(arr, arr2) {
+    return arr.concat(arr2)
+}
+add([1, 2], [3, 4]).then(console.log)*/
+
+// async then 4
+/*async function toarr(str) {return str.split('')}
+toarr('what did you done').then((result) => setTimeout(() => console.log(result), 2000))*/
+
+// async then 5
+/*async function logError() {return new Error('Be worse')}
+logError().then(console.log)*/
+
+// different between async then and async await
+// different 1
+/*async function timeThen() {
+    setTimeout(() => console.log('after 3 second'), 3000)
+}
+timeThen().then()  // in then
+await timeThen()  // in await    that's all*/
+
+// promise then
+// promise then 1
+/*new Promise((resolve, reject) => {
+    resolve('yess')
+}).then((res) => console.log(res))*/
+
+// promise then 2
+/*let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve(console.log('yes')), 2000)
+}).then(() => console.log('yes'))*/
+
+// promise then 3
+/*new Promise((resolve, reject) => {
+    resolve('i\'m running')
+}).then((res) => console.log(res))*/
+
+// promise then 4
+/*Promise.resolve('how are you').then((res) => console.log(res))*/
+
+// promise then 5
+/*Promise.resolve('how are you').then((res) => console.log(res)).then(console.log('started'))*/
+
+// promise await
+// promise await 1
+/*let promise = new Promise((resolve, reject) => {
+    resolve('yes')
+})
+console.log(await promise);*/
+
+// promise await 2
+/*let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve('ye you\'re viking'), 3000)
+})
+console.log(await promise);*/
+
+// promise await 3
+/*let promise = Promise.resolve('all right')
+console.log(await promise);*/
+
+// promise await 4
+/*let promise = Promise.resolve(setInterval(() => {console.log('iterable')}, 1000))
+console.log(await promise);*/
+
+// promise await 5
+/*let promise = new Promise((res, rej) => {
+    rej(new Error('kalla qoydinku'))
+})
+console.log(await promise);*/
 
 
 
